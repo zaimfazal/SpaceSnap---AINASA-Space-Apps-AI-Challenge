@@ -213,38 +213,7 @@ python backend/tests/e2e_smoke_test.py
 
 ---
 
-## 9. Submission Methodology Explanation (142 Words)
-
-> SpaceSnap / TerraVision AI bridges the gap between raw orbital Earth observations and public accessibility through an end-to-end computer vision pipeline. The system ingests satellite imagery from curated NASA collections, the public NASA Image and Video Library API, or user uploads with strict SSRF validation. Images are preprocessed and analyzed using the EarthVisionCV engine, which derives multi-spectral optical proxies including the Normalized Green Leaf Index (GLI), Blue-to-Red oceanic attenuation, and HSV albedo thresholds. Connected-component contours and Douglas-Peucker approximations extract spatial bounding boxes and segmentation masks for visible features. A synthesis engine then translates localized spatial data into a six-part plain-language explanation detailing feature interactions, environmental significance, and analytical certainty. The system exercises strict scientific restraint by declaring optical limitations—avoiding speculative causal claims regarding subsurface geology, live combustion thermal dynamics, or unmodeled weather trajectories.
-
----
-
-## 10. Discord Submission Template
-
-```markdown
-🚀 **SpaceSnap (TerraVision AI) — Explore Earth Through Intelligence** #evn-sp-ai
-
-**Tagline:** "See our planet differently. Understand it intelligently."
-**Track:** NASA Space Apps Challenge — Earth & Space Observation AI Explorer
-
-**Overview:**
-SpaceSnap transforms complex NASA satellite imagery into accessible, spatially localized features and plain-language scientific explanations for non-experts, researchers, and students.
-
-**Key Features Implemented:**
-🛰️ **Multi-Spectral Computer Vision Engine**: OpenCV-powered optical proxy segmentation (GLI vegetative canopy, marine blue-to-red attenuation, HSV albedo for storms/cryosphere, Canny edge grids for urban land use, and Hough circular transforms for craters/calderas).
-🎯 **Interactive Dual-Layer Viewer**: Canvas & SVG synchronized overlays, Side-by-Side split comparison with interactive slider, zoom/pan controls, and bidirectional hover/click card highlighting.
-💬 **6-Part Simple-Language Explanations**: Accessible breakdowns answering What am I looking at?, What was detected?, What is happening?, Why does it matter?, How certain is the analysis?, and Scientific Limitations.
-🔍 **NASA Multi-Source Ingestion**: 8 verified Earth Observatory benchmark samples, live search integration with the public NASA Image & Video Library API (`images-api.nasa.gov`), multi-format file uploads (JPG/PNG/WEBP) with MIME validation, and SSRF-protected URL loading.
-📁 **Client History & Exports**: Local browser history persistence with instant reload, annotated PNG export, and machine-readable Pydantic JSON export.
-
-**Tech Stack:** React 19, TypeScript, Vite 8, Tailwind CSS v4, Lucide React, Python 3.12, FastAPI, Uvicorn, OpenCV 5, Pillow, NumPy, Pytest.
-
-**Repository:** https://github.com/zaimfazal/SpaceSnap---AINASA-Space-Apps-AI-Challenge.git
-```
-
----
-
-## 11. Documentation Links
+## 9. Documentation Links
 
 - [System Architecture](docs/architecture.md)
 - [Dataset Sources & NASA Attribution](docs/dataset-sources.md)
@@ -253,6 +222,6 @@ SpaceSnap transforms complex NASA satellite imagery into accessible, spatially l
 
 ---
 
-## 12. License & Attribution
+## 10. License & Attribution
 
 This project is open-source under the [MIT License](LICENSE). All satellite imagery is courtesy of NASA (National Aeronautics and Space Administration), USGS (United States Geological Survey), and the Earth Science Data and Information System (ESDIS).
