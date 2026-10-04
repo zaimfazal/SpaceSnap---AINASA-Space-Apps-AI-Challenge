@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  terravision:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: terravision-ai
+    ports:
+      - "8000:8000"
+    environment:
+      - TERRAVISION_ANALYSIS_MODE=auto
+      - PORT=8000
+      - HOST=0.0.0.0
+    restart: unless-stopped

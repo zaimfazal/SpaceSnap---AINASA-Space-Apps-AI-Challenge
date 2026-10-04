@@ -1,0 +1,22 @@
+{
+  "name": "terravision-ai",
+  "version": "1.0.0",
+  "description": "TerraVision AI — Explore Earth Through Intelligence. NASA Earth & Space AI Observation Tool.",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python -m uvicorn app.main:app --reload --port 8000",
+    "build:frontend": "cd frontend && npm run build",
+    "test:backend": "cd backend && python -m pytest tests/test_backend.py -v",
+    "test:e2e": "python backend/tests/e2e_smoke_test.py"
+  },
+  "keywords": [
+    "nasa",
+    "earth-observation",
+    "satellite",
+    "computer-vision",
+    "ai",
+    "space-apps"
+  ],
+  "author": "TerraVision AI Team",
+  "license": "MIT"
+}
